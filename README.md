@@ -2,7 +2,9 @@
 
 **Research release 0.1.0.** Descriptive macrophage/T-cell analysis in 11 primary lung-tumor patients, exploratory mouse-marker evidence integration, and patient-level robustness. Independent functional validation is **inconclusive**; this release makes no predictive or clinical claim.
 
-Start with [the final report](reports/final_report.md) and [the reproducibility walkthrough](reports/reproducibility.md). Use the complete research ZIP, which includes the installable CLI wheel and bundled inputs for Phases 3–4. The wheel alone contains the runner, not the research data. The optional web interface is not included.
+Start with [the final report](reports/final_report.md) and [the reproducibility walkthrough](reports/reproducibility.md). Use the complete research ZIP, which includes the installable CLI wheel and bundled inputs for Phases 3–4. The wheel alone contains the runner, not the research data. The original 0.1.0 archive predates the web interface.
+
+The repository now includes a minimal [research explorer](frontend/README.md), with gene search, evidence filters, source details and CSV/report downloads. Run `python build_frontend.py` in the research environment, then `python serve_frontend.py`, and open http://127.0.0.1:8765. No account or API key is needed; the existing scientific pipeline is unchanged.
 
 ```text
 python -m pip install -r requirements-phase3-lock.txt

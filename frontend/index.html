@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f3ed">
+  <meta name="description" content="Explore OncoMyeloid-FX research results, gene-level evidence and patient-resampling uncertainty.">
+  <title>OncoMyeloid-FX — Research explorer</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="#main"><img src="favicon.svg" alt="" width="38" height="38"><span>OncoMyeloid<span class="brand-suffix">–FX</span></span></a>
+      <nav aria-label="Main navigation"><a href="#explore">Explore</a><a href="#study">Study</a><a href="#reports">Reports</a></nav>
+      <span class="release" id="release">Research release</span>
+    </header>
+    <main id="main">
+      <section class="intro" aria-labelledby="page-title">
+        <div><h1 id="page-title">Explore the evidence.</h1><p class="lead">Macrophage–T-cell associations, with the source evidence and uncertainty kept in view.</p><p class="cohort" id="cohort">Loading the verified research snapshot…</p></div>
+        <div class="conclusion"><span class="status-label"><span class="status-dot"></span>Validation inconclusive</span><p>These are exploratory rankings, not validated functional predictions.</p><a href="#study">Understand the study <span aria-hidden="true">↗</span></a></div>
+      </section>
+      <section id="explore" aria-labelledby="explore-title">
+        <div class="section-heading"><div><h2 id="explore-title">Candidate explorer</h2><p>Search a gene. Inspect its evidence.</p></div><button id="export" class="button secondary" type="button" disabled>Export filtered CSV <span aria-hidden="true">↓</span></button></div>
+        <div id="load-error" class="error" role="alert" hidden><strong>Results could not be loaded.</strong><p>Check that the local website server is running, then try again.</p><button class="button" id="retry" type="button">Retry loading</button></div>
+        <div class="workspace" id="workspace" aria-busy="true">
+          <div class="explorer clay">
+            <div class="filters">
+              <div class="field search-field"><label for="search">Find a gene</label><input type="search" id="search" placeholder="Gene symbol or HGNC ID" autocomplete="off" spellcheck="false"></div>
+              <div class="field"><label for="endpoint">Marker endpoint</label><select id="endpoint"><option value="MHCII">MHCII</option><option value="CD40">CD40</option><option value="PDL1">PD-L1</option></select></div>
+              <div class="field"><label for="evidence">Evidence</label><select id="evidence"><option value="all">All candidates</option><option value="measured">With marker evidence</option><option value="missing">Missing marker evidence</option></select></div>
+              <div class="field"><label for="sort">Order by</label><select id="sort"><option value="rank">Integrated rank</option><option value="symbol">Gene A–Z</option><option value="p">Association p-value</option></select></div>
+            </div>
+            <div class="table-meta"><span id="result-count" role="status" aria-live="polite">Loading candidates…</span><button id="reset" class="text-button" type="button">Reset filters</button></div>
+            <div class="table-scroll"><table><caption class="sr-only">Exploratory gene rankings. Select a gene to inspect evidence. Score is a heuristic, not a probability.</caption><thead><tr><th scope="col">Rank</th><th scope="col">Gene</th><th scope="col" class="number">Score <abbr title="Equal-weight percentile score; not a probability">ⓘ</abbr></th><th scope="col" class="number">FDR <abbr title="Multiple-testing-adjusted primary human association p-value">ⓘ</abbr></th></tr></thead><tbody id="rows"></tbody></table></div>
+            <div id="empty" class="empty" hidden><h3>No matching candidates</h3><p>Try a different gene symbol or reset the evidence filter.</p></div>
+            <div class="pagination"><span id="page-label">Page 1</span><div><button id="previous" type="button" class="page-button" aria-label="Previous page" disabled>←</button><button id="next" type="button" class="page-button" aria-label="Next page" disabled>→</button></div></div>
+            <p class="table-note">A missing score means no eligible marker evidence—not a negative result.</p>
+          </div>
+          <aside class="detail clay" aria-labelledby="detail-title" id="detail"><div class="detail-heading"><h3 id="detail-title">Gene evidence</h3><span class="small-label" id="gene-id">Select a candidate</span></div><div id="detail-content"><p class="muted">Select a gene to see its association, marker evidence and stability.</p></div></aside>
+        </div>
+      </section>
+      <section id="study" aria-labelledby="study-title" class="study-section">
+        <div class="section-heading"><div><h2 id="study-title">One study, five completed phases.</h2><p>Implementation is complete. Independent biological validation is not.</p></div></div>
+        <div class="study-layout"><ol class="phase-list"><li><span>1</span><div><h3>Feasibility</h3><p>Evidence audited. Predictive development did not meet the go-ahead criteria.</p></div></li><li><span>2</span><div><h3>Transcriptomic baseline</h3><p id="baseline-note">Patient-level associations; no primary discoveries at 5% FDR.</p></div></li><li><span>3</span><div><h3>Evidence integration</h3><p id="evidence-note">Mouse marker screens, mapped conservatively to human genes.</p></div></li><li><span>4</span><div><h3>Robustness</h3><p id="robustness-note">Patient resampling, ablations and an inconclusive benchmark decision.</p></div></li><li><span>5</span><div><h3>Research release</h3><p>Installable pipeline, executed notebooks and clean-copy reproduction.</p></div></li></ol><div class="reading-panel"><h3>What a rank can—and cannot—tell you</h3><p>The score combines human expression-association evidence with the magnitude of a mouse marker-screen effect. MHCII, CD40 and PD-L1 are separate endpoints.</p><p>It is not a probability, a therapeutic recommendation, or a measured T-cell-function effect.</p><p id="coverage-note"></p><p>Patient-resampling ranges describe stability in this small cohort. They do not establish independent predictive performance.</p><a class="button" href="downloads/final-report.md" download>Download final report <span aria-hidden="true">↓</span></a></div></div>
+      </section>
+      <section id="reports" aria-labelledby="reports-title" class="reports-section"><div class="section-heading"><div><h2 id="reports-title">Methods and source files</h2><p>Follow the results back to their definitions and provenance.</p></div></div><div class="report-links" id="report-links"></div><div class="dataset-links"><a href="downloads/baseline_rankings.csv" download>Full baseline CSV ↓</a><a href="downloads/integrated_rankings.csv" download>Full integrated CSV ↓</a><a href="downloads/phase4_rank_resampling.csv" download>Rank stability CSV ↓</a></div></section>
+    </main>
+    <footer><span>OncoMyeloid–FX · Read-only research explorer</span><span>Human lung cohort · Mouse marker evidence</span></footer>
+  </div>
+  <noscript><p class="error">JavaScript is required for the interactive explorer. You can still download the final report and full CSV tables using the links above.</p></noscript>
+</body>
+</html>
