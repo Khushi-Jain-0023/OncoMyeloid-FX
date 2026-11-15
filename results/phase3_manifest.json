@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-11-15T18:41:47.931442+00:00",
+  "config": {
+    "model_version": "descriptive_marker_rank_v1",
+    "scope": "exploratory_cross_species_immune_marker_integration",
+    "development_groups": [
+      "kiritsy_olive_2021"
+    ],
+    "excluded_groups": [
+      "marelli_2025"
+    ],
+    "endpoints": [
+      "MHCII",
+      "CD40",
+      "PDL1"
+    ],
+    "transcriptomic_weight": 0.5,
+    "weight_sensitivities": [
+      0.25,
+      0.75
+    ],
+    "orthology_policy": "one_mouse_one_human_per_MGI_homology_class_unique_HGNC",
+    "missing_evidence_policy": "no_integrated_rank_keep_baseline",
+    "screen_doi": "10.7554/eLife.65109",
+    "screen_family": "kiritsy_olive_2021",
+    "source_urls": {
+      "elife-65109-fig1-data1-v2.xlsx": "https://cdn.elifesciences.org/articles/65109/elife-65109-fig1-data1-v2.xlsx",
+      "HOM_MouseHumanSequence.rpt": "https://www.informatics.jax.org/downloads/reports/HOM_MouseHumanSequence.rpt",
+      "elife-65109.xml": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8598164/fullTextXML"
+    }
+  },
+  "screen_genes": 11701,
+  "quantitative_records": 35103,
+  "qualitative_records": 6,
+  "families": [
+    "kiritsy_olive_2021",
+    "marelli_2025"
+  ],
+  "direct_T_function_eligible_records": 0,
+  "coverage": [
+    {
+      "endpoint": "CD40",
+      "candidates": 6124,
+      "ranked": 5155,
+      "missing": 969
+    },
+    {
+      "endpoint": "MHCII",
+      "candidates": 6124,
+      "ranked": 5155,
+      "missing": 969
+    },
+    {
+      "endpoint": "PDL1",
+      "candidates": 6124,
+      "ranked": 5155,
+      "missing": 969
+    }
+  ],
+  "predictive_gate": "NO_GO",
+  "phase3_status": "descriptive_deliverables_complete_direct_functional_objective_unavailable",
+  "packages": {
+    "pandas": "2.3.3",
+    "numpy": "2.4.6",
+    "openpyxl": "3.1.5",
+    "pyarrow": "26.0.1"
+  },
+  "input_sha256": {
+    "configs/phase3.json": "c64da92ac72b9742337e0fa70507390e93efe5952879d51778281b3a42ba19d8",
+    "reports/scoring_spec.md": "39a6f2f22724ec018efda7fce19cbbcf74ecac1b38a8124dad94f225337e3c50",
+    "phase3.py": "eab393b8a6422dbce0a19b780f7058134c5c3a29590de9630f9ed35a74e20453",
+    "results/transcriptomic_candidates.csv": "d04d13a05213d32c7b42174ca5a3e8a5f6e05d4c099dd2fb68c32c2e5e4c967d",
+    "data/registry/perturbations.csv": "1bb9371f86e02fde52970e32738d0694ca869c3066a401eb1b16a1e748d4b427",
+    "work/hgnc_complete_set.txt": "6df77ac3cbaeb86a6dce5e17d851ebb27b6b3cdcd2471a211a3d8464f00c54c4",
+    "data/sources/phase3/elife-65109-fig1-data1-v2.xlsx": "6bc5942a4fcd165b39b8a73226016db97b109f9a5a705f21ef95f082c5856b18",
+    "data/sources/phase3/elife-65109.xml": "12d5523cbb6bdc7117948d51fd90f118acdfd0450b8cc3b559ed8c1423215ef0",
+    "data/sources/phase3/HOM_MouseHumanSequence.rpt": "0b8eb746eb41eb9505b3bf3c5c8b986aba8a51e6a75df77642dcac34322aeb06"
+  }
+}

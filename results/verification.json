@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "patients": 11,
+  "candidate_rows": 6124,
+  "sensitivity_rows": 55116,
+  "notebook_executed": true,
+  "unit_tests": "4 passed; independent statsmodels HC3 comparison; BH; missingness; composition simulation",
+  "checked_utc": "2026-11-15T18:25:14.924397+00:00"
+}

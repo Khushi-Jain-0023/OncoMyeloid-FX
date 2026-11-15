@@ -1,0 +1,4 @@
+split_group,partition,endpoint_class,rows,mapped,numeric
+kiritsy_olive_2021,development,T_cell_function_qualitative,4,4,0
+kiritsy_olive_2021,development,immune_marker_proxy,35103,31536,35103
+marelli_2025,excluded_not_pristine_test,T_cell_function_qualitative,2,0,0

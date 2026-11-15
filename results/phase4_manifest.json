@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-11-15T18:58:50.418649+00:00",
+  "config": {
+    "version": "phase4_descriptive_robustness_v1",
+    "seed": 20261116,
+    "bootstrap_replicates": 300,
+    "interval_quantiles": [
+      0.025,
+      0.5,
+      0.975
+    ],
+    "top_k": 20,
+    "endpoint": "direct_T_cell_function",
+    "candidate_universe": "frozen_phase2_6124",
+    "bootstrap_unit": "patient_paired_expression_and_T_score",
+    "functional_evidence_resampling": "none_single_family_no_replicate_level_data",
+    "tie_break": "gene_symbol_ascending_for_exactly_k_display",
+    "decision_if_no_eligible_test": "inconclusive",
+    "comparisons": [
+      "transcriptomic_only",
+      "marker_only",
+      "composition_adjusted",
+      "within_state",
+      "age",
+      "sex",
+      "library_size",
+      "exclude_double_histology",
+      "cytotoxic",
+      "CD8",
+      "retain_doublets",
+      "adaptive_qc",
+      "strict_T_annotation",
+      "exclude_indirect",
+      "leave_development_family_out"
+    ]
+  },
+  "patients": 11,
+  "genes": 6124,
+  "bootstrap_draws": 300,
+  "decision": {
+    "quantitative_families": 1,
+    "eligible_independent_records": 0,
+    "decision": "inconclusive",
+    "source_partition_check": "passed",
+    "endpoint_check": "passed",
+    "note": "No eligible unseen direct functional outcomes; no independent metrics computed."
+  },
+  "input_sha256": {
+    "phase4.py": "34c4f3995ba056ee3613e3c06b2877af4ff615347c1135b8562fcd94ab1c91ed",
+    "configs/phase4.json": "0cf01601073d2966673464d943f4a06f6e32c25ea3a2534cbef32a9cdd9012d2",
+    "reports/phase4_protocol.md": "ee3625717313736fe8c39308c257e015493d30faa9472f0439876c9767453648",
+    "results/baseline_rankings.csv": "3b10731d61c000e96c8db2f664c7b7804895ca78352de73a79466f295936211b",
+    "results/integrated_rankings.csv": "c22fda23dd33475b9ea4dab93a30ce58c204282d5614d6e92116e8cfa43d2d64",
+    "results/patient_features.csv": "09f51aa21d0d7d07b7b241835eac4fa508541b28d1c46743cc971ac303305b8a",
+    "results/patient_macrophage_expression.csv": "b5a6c0772fc17496f91e52d0ea4327f834025a2a4f49ad358c79d31cfcec2443",
+    "results/sensitivity_models.csv": "ba4c67c844df62e70ec71a7bca3a34e54251d5694510cda36c62b747efa61e07",
+    "data/curated/functional_evidence.parquet": "c60a9bb636a584e8d972fc2447f6b9ee3a8e14071780a471ef60f488245205ec",
+    "results/phase3_manifest.json": "1ee271dc238c1ece3d9ab077d9ea87fe0c3f3263b8ca1b7236b6f4abc0a38b6e",
+    "results/phase3_verification.json": "9bd016d916f87fdbce6700cfbe04dc163b213f8d9c536c793e633aab6ec7bcf4"
+  }
+}

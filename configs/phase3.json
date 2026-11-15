@@ -1,0 +1,18 @@
+{
+  "model_version": "descriptive_marker_rank_v1",
+  "scope": "exploratory_cross_species_immune_marker_integration",
+  "development_groups": ["kiritsy_olive_2021"],
+  "excluded_groups": ["marelli_2025"],
+  "endpoints": ["MHCII", "CD40", "PDL1"],
+  "transcriptomic_weight": 0.5,
+  "weight_sensitivities": [0.25, 0.75],
+  "orthology_policy": "one_mouse_one_human_per_MGI_homology_class_unique_HGNC",
+  "missing_evidence_policy": "no_integrated_rank_keep_baseline",
+  "screen_doi": "10.7554/eLife.65109",
+  "screen_family": "kiritsy_olive_2021",
+  "source_urls": {
+    "elife-65109-fig1-data1-v2.xlsx": "https://cdn.elifesciences.org/articles/65109/elife-65109-fig1-data1-v2.xlsx",
+    "HOM_MouseHumanSequence.rpt": "https://www.informatics.jax.org/downloads/reports/HOM_MouseHumanSequence.rpt",
+    "elife-65109.xml": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8598164/fullTextXML"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-11-15T18:47:13.864090+00:00",
+  "quantitative_records": 35103,
+  "qualitative_records": 6,
+  "ranked_genes_per_endpoint": 5155,
+  "missing_per_endpoint": 969,
+  "notebook_executed": true,
+  "direct_T_function_eligible_records": 0,
+  "output_sha256": {
+    "data/curated/functional_evidence.parquet": "c60a9bb636a584e8d972fc2447f6b9ee3a8e14071780a471ef60f488245205ec",
+    "results/baseline_rankings.csv": "3b10731d61c000e96c8db2f664c7b7804895ca78352de73a79466f295936211b",
+    "results/integrated_rankings.csv": "c22fda23dd33475b9ea4dab93a30ce58c204282d5614d6e92116e8cfa43d2d64",
+    "reports/phase3_evidence_ranking.md": "a83dc67cc4cf1946964505e385ba61717ec7cb1cf37e9bc0570d265289e57459",
+    "notebooks/03_evidence_ranking.ipynb": "c6053bf6e359504f2d8046bf0b4f2bcfb8bc9f3058a88193e22b3901aab0a12f",
+    "requirements-phase3-lock.txt": "f9a1a7b0f23e250275dfbca4cabee99ad26a5fe40d0a2cbdb3bbedbc9a90f4fc",
+    "results/plots/phase3_evidence.png": "2481a0948bc513451ae3efec25aa2d0ce86cbb6e93afb6a241aeb5c5b9393763",
+    "build_phase3_notebook.py": "69e93be75e374f058ea506442c27a6b8b17c25917a038acf3ead4169041476ca",
+    "verify_phase3.py": "c2b5d7c9e9295e47085060b626582c75017c55349cd39009fe525177964cc6a5",
+    "tests/test_phase3.py": "8bbbe767770cc0eac86623e77a132db37b647333538a0e182aa216a25f6d6b31"
+  }
+}

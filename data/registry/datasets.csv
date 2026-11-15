@@ -1,0 +1,2 @@
+dataset_id,accession,repository,doi,organism,cancer_subtype,tissue,assay,patient_count,sample_count,patient_ids_available,cell_annotations_available,processed_files_url,access_status,eligibility_reason,verified_on
+kim2020,GSE131907,GEO,,Homo sapiens,LUAD,multiple tissues,scRNA-seq,44,58,verified_workbook,downloaded_and_parsed,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131907,annotations_and_metadata_verified_matrix_HTTP_200,eligible_for_descriptive_ingestion_not_functional_benchmark,2026-11-15

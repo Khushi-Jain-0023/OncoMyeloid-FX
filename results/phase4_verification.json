@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "decision": "inconclusive",
+  "checked_utc": "2026-11-15T18:59:13.993878+00:00",
+  "bootstrap_draws": 300,
+  "ablation_comparisons": 45,
+  "leave_patient_out_comparisons": 33,
+  "rank_uncertainty_rows": 15465,
+  "notebook_executed": true,
+  "output_sha256": {
+    "results/phase4_ablation_metrics.csv": "7e5b19df1c8e07853d2dcafc85d3af540dcaa8649fc4b8bac0a0d4c774a58b65",
+    "results/phase4_bootstrap_draws.csv": "a6f25b5dbba0c4437515647475887f1994d725be7fc52b7125e01a912cbd9430",
+    "results/phase4_effect_resampling.csv": "7fa222373e1ad1cab31cde6ba3531e049f502bdbbca914a4d71303ce8d5989b4",
+    "results/phase4_failure_cases.csv": "6e9f798e9d92c2387585b810d9a371af92d84ef571d90fb0bb62efbb8081a3da",
+    "results/phase4_family_audit.csv": "8fb15e94f103f4a6299459f632eaef8fadf5406aa6e01e3dce75b4fdbae61ea7",
+    "results/phase4_leave_patient_out.csv": "65a186e02172d4a3d09dfdd991d99222fc1f909ea909aab8d4301b6e7837d565",
+    "results/phase4_rank_resampling.csv": "e3b9583b1b77b0d4ce7ab62dfdbbb96904e196feaa0dd8b491d37fc4f780301f",
+    "results/evaluation_metrics.csv": "5e13bdea14b9e329972680049148ebc6c13765e7d23400721e24b8269af1bcc6",
+    "reports/benchmark.md": "17fd6f2cc8e3401c047ba1b13b10ee4e1a315ab1ddec3a4c41d7ea44771b693d",
+    "reports/leakage_audit.md": "ffb62022c9935a79991da931f325cae606fd87dd28f2dc78b116bc37c031d76b",
+    "notebooks/04_benchmark_robustness.ipynb": "671e8ac1f69195925ddcccdd7840b25d63a140529c07cde03ab4cbb0d5ef8aad",
+    "build_phase4_notebook.py": "707e68a1d820063ab68dafa7c7bc951c446a36a66916f769fc7a4d78e63a9004",
+    "verify_phase4.py": "2aafebc0ca98f39dc02d27c377505919537cd310a36c2a5c0d50f87162481a27",
+    "tests/test_phase4.py": "6d88f227df757096688b1b4f94c93d9d2fc6c7e81eb6c8db185d3aa24c18724e",
+    "results/plots/phase4_ablations.png": "b3497c353c664f73a9302a0860ef32f662d72389eb5d82afee28a345f358b121",
+    "results/plots/phase4_rank_ranges.png": "4c473e1f85b245d34efe2d92465659ce0fa4e096584fcc36235a276d70a1dbe4"
+  }
+}

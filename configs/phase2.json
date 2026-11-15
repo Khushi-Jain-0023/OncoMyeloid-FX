@@ -1,0 +1,18 @@
+{
+  "cohort": "GSE131907_primary_lung",
+  "seed": 20261115,
+  "sample_prefix": "LUNG_T",
+  "qc": {"min_genes": 200, "max_genes": 10000, "min_umi": 100, "max_umi": 150000, "max_mito_fraction": 0.2},
+  "doublet_expected_rate": 0.05,
+  "normalization_total": 10000,
+  "min_macrophages": 50,
+  "min_t_cells": 50,
+  "candidate_min_detection": 0.10,
+  "signatures": {
+    "t_inhibitory": ["PDCD1", "LAG3", "TIGIT", "HAVCR2", "TOX", "ENTPD1"],
+    "t_cytotoxic": ["NKG7", "PRF1", "GZMB", "GZMH", "CTSW"],
+    "mac_lipid": ["APOE", "TREM2", "LPL", "GPNMB", "SPP1"],
+    "mac_antigen": ["HLA-DRA", "HLA-DRB1", "CD74", "HLA-DPA1", "HLA-DPB1"]
+  },
+  "annotation_markers": {"macrophage": ["LST1", "TYROBP", "FCER1G", "C1QA", "C1QB"], "T": ["CD3D", "CD3E", "TRAC"], "alveolar": ["FABP4", "PPARG", "MARCO"], "monocyte_derived": ["APOE", "C1QC", "CTSB"]}
+}

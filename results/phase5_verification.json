@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "version": "0.1.0",
+  "checked_utc": "2026-11-15T19:20:34.650894+00:00",
+  "archive_sha256": "23bae7c20b2b7aeccb337cc07d050175d9a82acf1da02ea581daeb5a6e699b18",
+  "environment": "separate Python 3.11.9 venv; all 87 analysis pins matched",
+  "commands": [
+    {
+      "command": [
+        "status"
+      ],
+      "exit_code": 0,
+      "log": "C:\\Users\\Khushi\\OneDrive\\Attachments\\OncoMyeloid-FX\\work\\release-smoke-01\\work\\release-test-logs\\00.txt"
+    },
+    {
+      "command": [
+        "doctor"
+      ],
+      "exit_code": 0,
+      "log": "C:\\Users\\Khushi\\OneDrive\\Attachments\\OncoMyeloid-FX\\work\\release-smoke-01\\work\\release-test-logs\\01.txt"
+    },
+    {
+      "command": [
+        "verify"
+      ],
+      "exit_code": 0,
+      "log": "C:\\Users\\Khushi\\OneDrive\\Attachments\\OncoMyeloid-FX\\work\\release-smoke-01\\work\\release-test-logs\\02.txt"
+    },
+    {
+      "command": [
+        "test"
+      ],
+      "exit_code": 0,
+      "log": "C:\\Users\\Khushi\\OneDrive\\Attachments\\OncoMyeloid-FX\\work\\release-smoke-01\\work\\release-test-logs\\03.txt"
+    },
+    {
+      "command": [
+        "run",
+        "--phase",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": "C:\\Users\\Khushi\\OneDrive\\Attachments\\OncoMyeloid-FX\\work\\release-smoke-01\\work\\release-test-logs\\04.txt"
+    },
+    {
+      "command": [
+        "run",
+        "--phase",
+        "4"
+      ],
+      "exit_code": 0,
+      "log": "C:\\Users\\Khushi\\OneDrive\\Attachments\\OncoMyeloid-FX\\work\\release-smoke-01\\work\\release-test-logs\\05.txt"
+    },
+    {
+      "command": [
+        "test"
+      ],
+      "exit_code": 0,
+      "log": "C:\\Users\\Khushi\\OneDrive\\Attachments\\OncoMyeloid-FX\\work\\release-smoke-01\\work\\release-test-logs\\06.txt"
+    }
+  ],
+  "equivalent_csv_tables": [
+    "baseline_rankings.csv",
+    "integrated_rankings.csv",
+    "phase3_coverage.csv",
+    "phase3_weight_sensitivity.csv",
+    "phase4_ablation_metrics.csv",
+    "phase4_leave_patient_out.csv",
+    "phase4_rank_resampling.csv",
+    "phase4_effect_resampling.csv",
+    "phase4_bootstrap_draws.csv",
+    "phase4_failure_cases.csv",
+    "evaluation_metrics.csv"
+  ],
+  "parquet_equivalent": true,
+  "raw_phase2_rerun": false,
+  "note": "Verified bundled-input Phases 3\u20134; no new independent functional validation."
+}

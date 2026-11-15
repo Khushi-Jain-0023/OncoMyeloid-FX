@@ -1,0 +1,14 @@
+{
+  "version": "phase4_descriptive_robustness_v1",
+  "seed": 20261116,
+  "bootstrap_replicates": 300,
+  "interval_quantiles": [0.025, 0.5, 0.975],
+  "top_k": 20,
+  "endpoint": "direct_T_cell_function",
+  "candidate_universe": "frozen_phase2_6124",
+  "bootstrap_unit": "patient_paired_expression_and_T_score",
+  "functional_evidence_resampling": "none_single_family_no_replicate_level_data",
+  "tie_break": "gene_symbol_ascending_for_exactly_k_display",
+  "decision_if_no_eligible_test": "inconclusive",
+  "comparisons": ["transcriptomic_only", "marker_only", "composition_adjusted", "within_state", "age", "sex", "library_size", "exclude_double_histology", "cytotoxic", "CD8", "retain_doublets", "adaptive_qc", "strict_T_annotation", "exclude_indirect", "leave_development_family_out"]
+}

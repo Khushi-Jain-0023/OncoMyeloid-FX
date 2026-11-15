@@ -1,0 +1,31 @@
+{
+  "t_inhibitory": [
+    "PDCD1",
+    "LAG3",
+    "TIGIT",
+    "HAVCR2",
+    "TOX",
+    "ENTPD1"
+  ],
+  "t_cytotoxic": [
+    "NKG7",
+    "PRF1",
+    "GZMB",
+    "GZMH",
+    "CTSW"
+  ],
+  "mac_lipid": [
+    "APOE",
+    "TREM2",
+    "LPL",
+    "GPNMB",
+    "SPP1"
+  ],
+  "mac_antigen": [
+    "HLA-DRA",
+    "HLA-DRB1",
+    "CD74",
+    "HLA-DPA1",
+    "HLA-DPB1"
+  ]
+}

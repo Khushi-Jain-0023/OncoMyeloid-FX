@@ -1,0 +1,107 @@
+{
+  "cohort": "GSE131907_primary_lung",
+  "input_cells": 45149,
+  "genes": 29634,
+  "retained_cells": 44984,
+  "patients": 11,
+  "tested_genes": 6124,
+  "primary_fdr_005": 0,
+  "composition_fdr_005": 1,
+  "gene_ids_mapped": 5730,
+  "config": {
+    "cohort": "GSE131907_primary_lung",
+    "seed": 20261115,
+    "sample_prefix": "LUNG_T",
+    "qc": {
+      "min_genes": 200,
+      "max_genes": 10000,
+      "min_umi": 100,
+      "max_umi": 150000,
+      "max_mito_fraction": 0.2
+    },
+    "doublet_expected_rate": 0.05,
+    "normalization_total": 10000,
+    "min_macrophages": 50,
+    "min_t_cells": 50,
+    "candidate_min_detection": 0.1,
+    "signatures": {
+      "t_inhibitory": [
+        "PDCD1",
+        "LAG3",
+        "TIGIT",
+        "HAVCR2",
+        "TOX",
+        "ENTPD1"
+      ],
+      "t_cytotoxic": [
+        "NKG7",
+        "PRF1",
+        "GZMB",
+        "GZMH",
+        "CTSW"
+      ],
+      "mac_lipid": [
+        "APOE",
+        "TREM2",
+        "LPL",
+        "GPNMB",
+        "SPP1"
+      ],
+      "mac_antigen": [
+        "HLA-DRA",
+        "HLA-DRB1",
+        "CD74",
+        "HLA-DPA1",
+        "HLA-DPB1"
+      ]
+    },
+    "annotation_markers": {
+      "macrophage": [
+        "LST1",
+        "TYROBP",
+        "FCER1G",
+        "C1QA",
+        "C1QB"
+      ],
+      "T": [
+        "CD3D",
+        "CD3E",
+        "TRAC"
+      ],
+      "alveolar": [
+        "FABP4",
+        "PPARG",
+        "MARCO"
+      ],
+      "monocyte_derived": [
+        "APOE",
+        "C1QC",
+        "CTSB"
+      ]
+    }
+  },
+  "source_sha256": {
+    "work\\umi_matrix.txt.gz": "b44a9c6635d0b59ec66b5eb6b40b40e7292c3a75aaf8afc4f933eb0550a26372",
+    "work\\sample_metadata.xlsx": "27bec6d22d2658e5cccab2bdd463e7b4e4ba342f795bdeb07fdb3f68084ff8e4",
+    "work\\GSE131907_cell_annotation.txt.gz": "9d017652a31a489c1f62cacc436936d48a5b07bb554fc0dbe602da7474532205",
+    "configs\\phase2.json": "f11c6b1fc7b9cc40ba700b348aa8c217ab9a0ba7d493cbe3b177357ad351d972",
+    "phase2.py": "acc879e9b586eb94b1dca410104bbf079b72bea196fd38e1614d97218f3368f8",
+    "work/hgnc_complete_set.txt": "6df77ac3cbaeb86a6dce5e17d851ebb27b6b3cdcd2471a211a3d8464f00c54c4",
+    "reports/phase2_protocol.md": "d3739ec59d5e2990aee6fb2fed795e65f075ab6170a16ea4b39b7cc8319739ea",
+    "build_notebook.py": "3de7edfc0b2984cbba1c764c72f51a2c787c1b7139ae397888dfc3286588711d",
+    "summarize_phase2.py": "47cee65e4dedde1f0b1becb98d4b12bb33a801d16fc8db4c49fb9f831c9b6b2f",
+    "verify_phase2.py": "a2906890a096c1c443b6a0a915d25528d8d0a3c0d2879324faedce6c9c780225"
+  },
+  "python": "3.11.9",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "anndata": "0.12.19",
+    "scanpy": "1.11.5",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.11.2",
+    "scikit-learn": "1.7.2"
+  },
+  "timestamp_utc": "2026-11-15T18:16:22.401218+00:00"
+}

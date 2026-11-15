@@ -1,0 +1,11 @@
+work/
+.venv/
+__pycache__/
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+RELEASE_MANIFEST.json
+data/curated/*.h5ad
+results/cell_qc_annotations.csv.gz
+results/patient_macrophage_expression.csv
